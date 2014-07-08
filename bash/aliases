@@ -1,4 +1,10 @@
-# Git aliases
+## ----- Files & Jumps ----- ##
+
+alias scratch='subl ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+alias al='subl ~/.dotfiles/bash/aliases'
+
+## ----- Git ----- ##
+
 alias ga='git add'
 alias gb='git branch'
 alias gc='git commit -m'
@@ -21,8 +27,15 @@ alias gs='git status'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
 
-# Middleman aliases
+## ----- Middleman ----- ##
+
 alias mms='./bin/middleman s'
 
-# Redis alias
+## ----- Redis ----- ##
+
 alias rs='redis-server /usr/local/etc/redis.conf'
+
+## ----- Unix ----- ##
+
+alias rmd='rm -rf'
+alias sbp='source ~/.bash_profile'
