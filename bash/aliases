@@ -31,11 +31,38 @@ alias gui='git update-index --assume-unchanged'
 
 alias mms='./bin/middleman s'
 
+## ----- MVCSS ----- ##
+
+alias m='mvcss'
+alias ma='mvcss all'
+alias mac='mvcss copy'
+alias maf='mvcss foundation'
+alias macf='mvcss copy foundation'
+alias maco='mvcss components'
+alias macco='mvcss copy components'
+alias ml='mvcss-library'
+alias mlc='mvcss-library copy'
+alias mlf='mvcss-library foundation'
+alias mlcf='mvcss-library copy foundation'
+alias mlco='mvcss-library components'
+alias mlcco='mvcss-library copy components'
+
+## ----- OS X ----- ##
+
+# Clean up LaunchServices to remove duplicates in the "Open With" menu
+
+alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
 ## ----- Redis ----- ##
 
 alias rs='redis-server /usr/local/etc/redis.conf'
 
 ## ----- Unix ----- ##
 
+#Listing
+alias l='ls -1F'
+alias la='ls -A1F'
+
 alias rmd='rm -rf'
+alias rmorig='find . -name *.orig -delete'
 alias sbp='source ~/.bash_profile'
