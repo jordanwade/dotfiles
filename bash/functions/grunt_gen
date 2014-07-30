@@ -2,12 +2,29 @@ function grunt_gen() {
   local loading="Getting that thang..."
   local created="Created Gruntfile.js!"
   local sass=https://raw.githubusercontent.com/jordanwade/grunt-gen/master/gruntfile-sass.js
+  local haml=https://raw.githubusercontent.com/jordanwade/grunt-gen/master/gruntfile-haml.js
+  local connect=https://raw.githubusercontent.com/jordanwade/grunt-gen/master/gruntfile-server.js
 
   case "$1" in
     'sass')
       echo $loading
       curl -s $sass > Gruntfile.js
       echo $created
+      sudo npm install grunt-contrib-sass --save-dev
+      ;;
+    *)
+    'haml')
+      echo $loading
+      curl -s $haml > Gruntfile.js
+      echo $created
+      sudo npm install grunt-contrib-haml --save-dev
+      ;;
+    *)
+    'connect')
+      echo $loading
+      curl -s $connect > Gruntfile.js
+      echo $created
+      npm install grunt-contrib-connect --save-dev
       ;;
     *)
   esac
