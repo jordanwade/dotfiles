@@ -1,4 +1,5 @@
 source ~/.bash/aliases
+source ~/.bash/functions/grunt_gen
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
 

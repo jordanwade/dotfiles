@@ -1,0 +1,14 @@
+function grunt_gen() {
+  local loading="Getting that thang..."
+  local created="Created Gruntfile.js!"
+  local sass=https://raw.githubusercontent.com/jordanwade/grunt-gen/master/gruntfile-sass.js
+
+  case "$1" in
+    'sass')
+      echo $loading
+      curl -s $sass > Gruntfile.js
+      echo $created
+      ;;
+    *)
+  esac
+}
