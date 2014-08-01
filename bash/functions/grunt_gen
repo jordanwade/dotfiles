@@ -12,14 +12,14 @@ function grunt_gen() {
       echo $created
       sudo npm install grunt-contrib-sass --save-dev
       ;;
-    *)
+
     'haml')
       echo $loading
       curl -s $haml > Gruntfile.js
       echo $created
       sudo npm install grunt-contrib-haml --save-dev
       ;;
-    *)
+
     'connect')
       echo $loading
       curl -s $connect > Gruntfile.js
