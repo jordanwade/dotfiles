@@ -11,6 +11,7 @@ function grunt_gen() {
       curl -s $sass > Gruntfile.js
       echo $created
       sudo npm install grunt-contrib-sass --save-dev
+      sudo npm install grunt-contrib-watch --save-dev
       ;;
 
     'haml')
