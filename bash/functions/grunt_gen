@@ -10,22 +10,22 @@ function grunt_gen() {
       echo $loading
       curl -s $sass > Gruntfile.js
       echo $created
-      sudo npm install grunt-contrib-sass --save-dev
-      sudo npm install grunt-contrib-watch --save-dev
+      echo sudo npm install grunt-contrib-sass --save-dev
+      echo sudo npm install grunt-contrib-watch --save-dev
       ;;
 
     'haml')
       echo $loading
       curl -s $haml > Gruntfile.js
       echo $created
-      sudo npm install grunt-contrib-haml --save-dev
+      echo sudo npm install grunt-contrib-haml --save-dev
       ;;
 
     'connect')
       echo $loading
       curl -s $connect > Gruntfile.js
       echo $created
-      npm install grunt-contrib-connect --save-dev
+      echo npm install grunt-contrib-connect --save-dev
       ;;
     *)
   esac
