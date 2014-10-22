@@ -10,6 +10,7 @@ alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && bre
 ## ----- Git ----- ##
 
 alias ga='git add'
+alias gap='git add -p'
 alias gb='git branch'
 alias gc='git commit -m'
 alias gca='git commit -a -m'
