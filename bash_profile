@@ -1,4 +1,5 @@
 source ~/.bash/aliases
+source ~/.bash/functions/functions
 source ~/.bash/functions/grunt_gen
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
@@ -14,3 +15,4 @@ export CLICOLOR=1
 
 export NVM_DIR="/Users/jordanwade/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+eval "$(rbenv init -)"

@@ -1,0 +1,13 @@
+# ----------------------------------------------------
+#   Remote Tracking Branch
+#   -> Creates a new branch and pushes that branch to remote
+# ----------------------------------------------------
+#
+# $1 - the branch name
+#
+# Usage: `git_remote_tracking_branch fix_sign_up_form_styles`
+#
+
+function git_remote_tracking_branch() {
+  git checkout -b $1 && git push -u origin $1
+}
