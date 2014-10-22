@@ -3,6 +3,10 @@
 alias scratch='subl ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
 alias al='subl ~/.dotfiles/bash/aliases'
 
+## ----- Brew ----- ##
+
+alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+
 ## ----- Git ----- ##
 
 alias ga='git add'
