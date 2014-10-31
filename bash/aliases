@@ -32,6 +32,13 @@ alias gs='git status'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
 
+## ----- Hub ----- ##
+
+alias h='hub'
+alias hb='hub browse'
+alias hc='hub clone'
+alias hpr='hub pull-request'
+
 ## ----- Middleman ----- ##
 
 alias mms='./bin/middleman s'
