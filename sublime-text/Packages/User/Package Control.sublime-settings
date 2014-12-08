@@ -1,0 +1,24 @@
+{
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"Alignment",
+		"ApplySyntax",
+		"AutoFileName",
+		"BracketHighlighter",
+		"CoffeeScript",
+		"Git",
+		"Github Tools",
+		"Haml",
+		"Modific",
+		"MoveTab",
+		"Package Control",
+		"Sass",
+		"SchemeCycler",
+		"Syntax Highlighting for Sass",
+		"Theme - Flatland",
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark",
+		"Tomorrow Color Schemes"
+	]
+}
