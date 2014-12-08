@@ -5,6 +5,7 @@
 	"color_scheme": "Packages/Theme - Flatland/Flatland Dark.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
+	"show_minimap": false,
 	"file_exclude_patterns":
 	[
 		".DS_Store"
