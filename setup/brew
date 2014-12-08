@@ -1,0 +1,35 @@
+# Install command-line tools using Homebrew
+# Usage: `brew bundle setup/brew`
+
+# Make sure we’re using the latest Homebrew
+update
+
+# Upgrade any already-installed formulae
+upgrade
+
+# Autojump
+# -> A cd command that learns
+install autojump
+
+# Bash & Bash Completion
+install bash
+install bash-completion
+
+# Git
+# -> Version control
+install git
+
+# Hub
+# -> Command-line wrapper for git
+install hub
+
+# Node
+# -> Platform built on Chrome's JavaScript runtime
+install node
+
+# Redis
+# -> Advanced key-value store
+install redis
+
+# Remove outdated versions from the cellar
+cleanup
