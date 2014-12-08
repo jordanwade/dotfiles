@@ -1,0 +1,12 @@
+.DS_Store
+
+sublime-text/Packages
+!sublime-text/Packages/Color Scheme - User
+!sublime-text/Packages/Theme - Spacegray
+!sublime-text/Packages/User
+
+doc/tags
+
+gitconfig.local
+
+bin/_*
