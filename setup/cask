@@ -8,6 +8,7 @@ cask install adobe-creative-cloud 2> /dev/null
 cask install alfred 2> /dev/null
 cask install anvil 2> /dev/null
 cask install appcleaner 2> /dev/null
+cask install dropbox 2> /dev/null
 cask install evernote 2> /dev/null
 cask install firefox 2> /dev/null
 cask install google-chrome 2> /dev/null
