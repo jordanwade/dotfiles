@@ -1,0 +1,15 @@
+[include]
+
+  path = ~/.gitconfig.local
+
+[push]
+
+  default = simple
+
+[core]
+
+  editor = subl -w
+
+[merge]
+
+  tool = opendiff
