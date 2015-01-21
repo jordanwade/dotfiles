@@ -56,6 +56,8 @@ class AdvancedNewFileMove(DuplicateFileBase, GitCommandBase):
 
         window = self.window
         rename_filename = self.get_argument_name()
+        if not self._try_prompt_if_dest_exists(file_path):
+            return
         if rename_filename:
             self.move_from_argument(rename_filename, file_path)
         elif self.view is not None:
@@ -83,6 +85,15 @@ class AdvancedNewFileMove(DuplicateFileBase, GitCommandBase):
             self.move_file_from_disk(source, target)
         self.open_file(target)
 
+    def _try_prompt_if_dest_exists(self, target):
+        if self.settings.get(WARN_OVERWRITE_ON_MOVE_SETTING, False):
+            if (os.path.exists(target)):
+                return sublime.ok_cancel_dialog(target + "already exists. " +
+                                                "move will overwrite " +
+                                                "existing file. Continue?")
+
+        return True
+
     def move_file_from_disk(self, source, target):
         window = self.window
         self.view.run_command("save")
@@ -108,6 +119,9 @@ class AdvancedNewFileMove(DuplicateFileBase, GitCommandBase):
 
     def get_status_prefix(self):
         return "Moving file to"
+
+    def get_default_root_setting(self):
+        return RENAME_FILE_DEFAULT_ROOT_SETTING
 
 
 class AdvancedNewFileMoveAtCommand(sublime_plugin.WindowCommand):

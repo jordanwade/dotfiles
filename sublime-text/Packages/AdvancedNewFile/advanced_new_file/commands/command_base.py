@@ -30,7 +30,7 @@ class AdvancedNewFileBase(object):
             self.platform = NixPlatform()
 
     def __generate_default_root(self):
-        root_setting = self.settings.get(DEFAULT_ROOT_SETTING)
+        root_setting = self._get_default_root()
         path, folder_index = self.__parse_path_setting(
             root_setting, DEFAULT_FOLDER_INDEX_SETTING)
         if path is None and folder_index is None:
@@ -106,7 +106,12 @@ class AdvancedNewFileBase(object):
                 if filename is not None:
                     root = os.path.dirname(filename)
             if root is None:
-                root = os.path.expanduser("~/")
+                if self.settings.get(CURRENT_FALLBACK_TO_PROJECT_SETTING, False):
+                    folder_index = self.__validate_folder_index(0)
+                    if folder_index == -1:
+                        root = os.path.expanduser("~/")
+                else:
+                    root = os.path.expanduser("~/")
         elif setting == "project_folder":
             folder_index = self.settings.get(index_setting)
             folder_index = self.__validate_folder_index(folder_index)
@@ -427,6 +432,17 @@ class AdvancedNewFileBase(object):
                 if view_name != "" and view_name == file_name:
                     return view
         return None
+
+    ## Should be overridden by sub class
+    def get_default_root_setting(self):
+        return DEFAULT_ROOT_SETTING
+
+    def _get_default_root(self):
+        root_setting_value = self.get_default_root_setting()
+        root_setting = self.settings.get(root_setting_value)
+        if root_setting == DEFAULT_ROOT_SETTING:
+            return self.settings.get(DEFAULT_ROOT_SETTING)
+        return root_setting
 
 def test_split(s, comments=False, posix=True):
     is_str = False
