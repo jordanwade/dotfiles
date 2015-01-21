@@ -9,7 +9,7 @@ alias be='bundle exec'
 
 ## ----- Brew ----- ##
 
-alias beerfest='brew update && brew upgrade && brew cleanup && brew prune && brew doctor'
+alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 
 ## ----- Git ----- ##
 
