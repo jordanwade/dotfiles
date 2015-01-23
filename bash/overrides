@@ -1,0 +1,11 @@
+# ****************************************************
+#
+#   Overrides
+#
+# ****************************************************
+
+# Allow 'g' alias for 'git'
+__git_complete g __git_main
+
+# Allow 'go' alias to autocomplete
+__git_complete go _git_checkout

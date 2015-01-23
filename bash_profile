@@ -16,7 +16,9 @@ export PATH="$HOME:/usr/local/bin:$HOME/.dotfiles/bin:$HOME/.rbenv/bin:$PATH:/Ap
 
 source ~/.bash/aliases
 source ~/.bash/config
+source ~/.bash/completions/git.bash
 source ~/.bash/functions/functions
 source ~/.bash/functions/grunt_gen
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
+source ~/.bash/overrides
