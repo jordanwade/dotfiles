@@ -13,3 +13,7 @@
 [merge]
 
   tool = opendiff
+
+[commit]
+
+  template = ~/.dotfiles/git/template
