@@ -5,6 +5,8 @@ sublime-text/Packages
 !sublime-text/Packages/Theme - Spacegray
 !sublime-text/Packages/User
 
+sublime-text/Packages/User/Package Control.last-run
+
 doc/tags
 
 gitconfig.local
