@@ -4,7 +4,7 @@ echo
 echo "--------------------------------------------------------------"
 echo "--> Setting up Sublime Text..."
 echo "--------------------------------------------------------------"
-cd ~/Library/Application\ Support/Sublime\ Text\ 2/
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 rm -rf Packages
 ln -s ~/.dotfiles/sublime-text/Packages Packages
 echo "--> Symlinked ~/.dotfiles/sublime-text/Packages Packages to Sublime Text Packages"
