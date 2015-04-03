@@ -78,6 +78,11 @@ alias ras='rails s'
 
 alias rs='redis-server /usr/local/etc/redis.conf'
 
+# ----- Searching ----- #
+
+alias fa='alias | grep'
+alias faa='find_alias'
+
 ## ----- Unix ----- ##
 
 #Listing

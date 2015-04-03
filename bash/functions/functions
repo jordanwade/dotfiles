@@ -25,3 +25,17 @@ function git_remote_tracking_branch() {
 function git_delete_branch_for_real() {
   git branch -D $1 && git push origin :$1
 }
+
+# ----------------------------------------------------
+#   Find Alias
+#   -> Greps for an alias
+# ----------------------------------------------------
+#
+# $1 - the alias name
+#
+# Usage: `find_alias 'gba'`
+#
+
+function find_alias() {
+  alias | grep "alias\s$1"
+}
