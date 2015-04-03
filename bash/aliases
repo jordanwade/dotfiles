@@ -72,7 +72,7 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 
 ## ----- Rails ----- ##
 
-alias rs='rails s'
+alias ras='rails s'
 
 ## ----- Redis ----- ##
 
