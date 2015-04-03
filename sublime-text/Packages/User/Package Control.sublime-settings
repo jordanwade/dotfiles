@@ -4,25 +4,20 @@
 	],
 	"installed_packages":
 	[
-		"AdvancedNewFile",
 		"Alignment",
-		"AngularJS (CoffeeScript)",
 		"ApplySyntax",
-		"AutoFileName",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"CoffeeScript",
+		"Chopstick Autocompletion",
 		"Git",
-		"Github Tools",
 		"Haml",
+		"jQuery",
 		"Modific",
-		"MoveTab",
 		"Package Control",
 		"SchemeCycler",
+		"SideBarEnhancements",
 		"Syntax Highlighting for Sass",
 		"Theme - Flatland",
-		"Theme - Soda",
-		"Theme - Soda SolarizedDark",
-		"Tomorrow Color Schemes"
+		"Theme - Soda"
 	]
 }

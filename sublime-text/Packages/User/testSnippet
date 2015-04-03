@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+= link_to '${1:#}'${2:, class: '${3}'} do
+  $0
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>fuck</tabTrigger>
+</snippet>
