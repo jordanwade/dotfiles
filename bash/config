@@ -4,15 +4,34 @@
 #
 # ****************************************************
 
-# Pretty colors
+# ----------------------------------------------------
+#   Exports
+# ----------------------------------------------------
+
 export CLICOLOR=1
+export SHELL='/bin/bash'
 
-# Enable shims and autocompletion
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# ----------------------------------------------------
+#   Autojump
+# ----------------------------------------------------
 
-# This loads AutoJump (which was install via brew)
 [[ -s `brew --prefix`/etc/autojump.sh ]] && . `brew --prefix`/etc/autojump.sh
 
-export NVM_DIR="/Users/jordanwade/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-eval "$(rbenv init -)"
+# ----------------------------------------------------
+#   rbenv
+# ----------------------------------------------------
+
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# ----------------------------------------------------
+#   NVM
+# ----------------------------------------------------
+
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# ----------------------------------------------------
+#   Gulp Autocomplete
+# ----------------------------------------------------
+
+eval "$(gulp --completion=bash)"

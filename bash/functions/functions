@@ -39,3 +39,32 @@ function git_delete_branch_for_real() {
 function find_alias() {
   alias | grep "alias\s$1"
 }
+
+
+# ----------------------------------------------------
+#   Dispatch
+#   -> Runs scripts for js.com
+# ----------------------------------------------------
+
+function dispatch() {
+
+  if [ "$DISPATCHED" != "1" ]; then
+
+    # JavaScript.com
+
+    if [ "$( pwd )" == "$HOME/Projects/cs/JavaScript.com" ]; then
+      . .service-credentials
+      nvm use iojs-v1.2.0 &> /dev/null
+
+      DISPATCHED="1"
+    fi
+
+  fi
+
+}
+
+# ----------------------------------------------------
+#   Prompt Command
+# ----------------------------------------------------
+
+PROMPT_COMMAND+='; dispatch'
