@@ -102,3 +102,8 @@ alias cm_latest_courses='bundle exec rake campus:courses:install'
 ## ----- JavaScript ----- ##
 
 alias dropdb="psql -c 'DROP DATABASE javascriptcom'"
+
+## ----- Update rbenv and rails ----- ##
+
+alias update_rbenv='cd $HOME/.rbenv && git pull && cd -'
+alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
