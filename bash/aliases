@@ -98,6 +98,7 @@ alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy'
 ## ----- Code School ----- ##
 
 alias cm_latest_courses='bundle exec rake campus:courses:install'
+alias cm_update_courses='bundle exec rake campus:courses:update'
 
 ## ----- JavaScript ----- ##
 
