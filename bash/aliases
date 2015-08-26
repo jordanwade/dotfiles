@@ -44,6 +44,12 @@ alias hb='hub browse'
 alias hc='hub clone'
 alias hpr='hub pull-request'
 
+## ----- Heroku ----- ##
+
+alias hd='git push heroku master'
+alias hrm= 'heroku run rake db:migrate'
+alias hre= 'heroku restart'
+
 ## ----- Middleman ----- ##
 
 alias mms='./bin/middleman s'
@@ -73,6 +79,7 @@ alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/La
 ## ----- Rails ----- ##
 
 alias ras='rails s'
+alias rac='rails c'
 
 ## ----- Redis ----- ##
 

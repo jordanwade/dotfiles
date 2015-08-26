@@ -22,3 +22,6 @@ source ~/.bash/functions/grunt_gen
 source ~/.bash/functions/mvcss
 source ~/.bash/prompt
 source ~/.bash/overrides
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
