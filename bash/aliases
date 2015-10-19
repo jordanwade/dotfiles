@@ -99,6 +99,7 @@ alias la='ls -A1F'
 alias rmd='rm -rf'
 alias rmorig='find . -name *.orig -delete'
 alias sbp='source ~/.bash_profile'
+alias rtf='rm -rf tmp/'
 
 alias sshkey='cat ~/.ssh/id_rsa.pub | pbcopy'
 
