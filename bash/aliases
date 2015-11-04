@@ -24,7 +24,7 @@ alias gfb='git checkout -b'
 alias gg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias ggo='git log --oneline --stat'
 alias ggs='git log'
-alias gh='git show'
+alias gw='git show'
 alias gl='git pull'
 alias glr='git pull --rebase'
 alias go='git checkout'
@@ -111,6 +111,8 @@ alias kill='killall Finder'
 
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
+alias cs_dtp='saturn --production --application codeschool --deploy'
+alias cs_dts='saturn --staging --application codeschool --deploy'
 
 ## ----- JavaScript ----- ##
 
