@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Sublime Text
+#
+# ****************************************************
 
-echo
-echo "--------------------------------------------------------------"
-echo "--> Setting up Sublime Text..."
-echo "--------------------------------------------------------------"
 cd ~/Library/Application\ Support/Sublime\ Text\ 3/
 rm -rf Packages
 ln -s ~/.dotfiles/sublime-text/Packages Packages
