@@ -109,10 +109,15 @@ alias kill='killall Finder'
 
 ## ----- Code School ----- ##
 
+alias rk_tasks="be rake -T | grep 'sample'"
+
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'
+
+alias rkap='RAILS_ENV=development bundle exec rake assets:precompile'
+alias rmpa='rm -rf public/assets'
 
 ## ----- JavaScript ----- ##
 
