@@ -3,13 +3,6 @@
 if [ ! -d "$HOME/.dotfiles" ]
 then
   echo
-  echo "=============================================================="
-  echo "==> Installing Jordan Wade's dotfiles..."
-  echo "=============================================================="
-  echo
-  git clone git@github.com:jordanwade/dotfiles.git ~/.dotfiles
-
-  echo
   echo "--------------------------------------------------------------"
   echo "--> Setting up Bash..."
   echo "--------------------------------------------------------------"
