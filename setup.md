@@ -4,7 +4,7 @@ Setup
 - Download and install latest version of Xcode from Mac App Store, and then run:
 
 ```shell
-git clone git@github.com:drewbarontini/dotfiles.git ~/.dotfiles
+git clone git@github.com:jordanwade/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 ```
 
