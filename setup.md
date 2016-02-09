@@ -6,7 +6,8 @@ Setup
 ```shell
 git clone git@github.com:jordanwade/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
+bash  ~/.dotfiles/instal.sh
 ```
 
 **Note**: If installing on El Capitan, [read
-this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md) _before_ running `rake install`.
+this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md) _before_ running.
