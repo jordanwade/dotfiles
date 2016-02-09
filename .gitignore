@@ -1,5 +1,15 @@
 .DS_Store
 
+atom/.apm
+atom/.node-gyp
+atom/.npm
+atom/compile-cache
+atom/dev
+atom/packages
+atom/storage
+atom/storage
+atom/blob-store
+
 sublime-text/Packages/bz2
 sublime-text/Packages/User/Package Control.cache
 sublime-text/Packages/User/Package Control.last-run
