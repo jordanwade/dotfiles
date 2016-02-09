@@ -1,0 +1,3 @@
+[submodule "sublime-text/Packages/User/Snippets"]
+	path = sublime-text/Packages/User/Snippets
+	url = git@github.com:jordanwade/sublime-text-snippets.git
