@@ -36,6 +36,8 @@ alias gpp='git pull --rebase && git push'
 alias gs='git status'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
+alias gmm='git merge master'
+alias grh='git reset --hard'
 
 ## ----- Hub ----- ##
 
@@ -70,22 +72,31 @@ alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
 
+## ----- Net ----- ##
+
+alias dmx='dnx web'
+
 ## ----- OS X ----- ##
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
 
+## ----- Python/Django ----- ##
+
+alias pys='python manage.py runserver'
+
 ## ----- Rails ----- ##
 
 alias ras='rails s'
 alias rac='rails c'
+alias frp='be rake routes | grep'
 
 ## ----- Redis ----- ##
 
 alias rs='redis-server /usr/local/etc/redis.conf'
 
-# ----- Searching ----- #
+## ----- Searching ----- ##
 
 alias fa='alias | grep'
 alias faa='find_alias'
@@ -111,8 +122,14 @@ alias kill='killall Finder'
 
 alias rk_tasks="be rake -T | grep 'sample'"
 
+// campus
+
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
+alias campus_dtp='saturn --production --application campus --deploy'
+
+// platform
+
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'
 
