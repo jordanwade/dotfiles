@@ -8,6 +8,7 @@
 	[
 		"Alignment",
 		"ApplySyntax",
+		"Babel",
 		"Better CoffeeScript",
 		"BracketHighlighter",
 		"Chopstick Autocompletion",

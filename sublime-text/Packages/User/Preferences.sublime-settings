@@ -17,7 +17,9 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip"
+		"*.zip",
+		"*.yml",
+		"*.json"
 	],
 	"bold_folder_labels": true,
 	"caret_style": "solid",
@@ -26,14 +28,18 @@
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
-		".DS_Store"
+		".DS_Store",
+		".jspm-hash"
 	],
 	"folder_exclude_patterns":
 	[
 		".bundle",
 		".git",
 		".sass-cache",
-		"tmp"
+		"tmp",
+		"node_modules",
+		".travis",
+		"jspm_packages"
 	],
 	"font_face": "Ubuntu Mono",
 	"font_options":
