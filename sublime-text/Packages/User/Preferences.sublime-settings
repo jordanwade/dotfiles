@@ -2,6 +2,7 @@
 	"auto_complete_commit_on_tab": true,
 	"binary_file_patterns":
 	[
+		"*.4m",
 		"*.dds",
 		"*.eot",
 		"*.eps",
@@ -10,16 +11,17 @@
 		"*.jar",
 		"*.jpeg",
 		"*.jpg",
+		"*.json",
 		"*.log",
 		"*.mp3",
 		"*.pdf",
 		"*.png",
+		"*.py",
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip",
 		"*.yml",
-		"*.json"
+		"*.zip"
 	],
 	"bold_folder_labels": true,
 	"caret_style": "solid",
@@ -33,13 +35,16 @@
 	],
 	"folder_exclude_patterns":
 	[
+		"admin",
 		".bundle",
 		".git",
 		".sass-cache",
-		"tmp",
-		"node_modules",
 		".travis",
-		"jspm_packages"
+		"jspm_packages",
+		"node_modules",
+		"python3.4",
+		"tmp",
+		"venv"
 	],
 	"font_face": "Ubuntu Mono",
 	"font_options":

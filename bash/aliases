@@ -124,9 +124,13 @@ alias rk_tasks="be rake -T | grep 'sample'"
 
 // campus
 
+alias campus_bcp='saturn -p -a campus --rake-all "campus:cache:bust course=all"'
+alias campus_bcs='saturn -s -a campus --rake-all "campus:cache:bust course=all"'
+alias campus_dtp='saturn --production --application campus --deploy'
+alias campus_dts='saturn --staging --application campus --deploy'
+alias campus_servers='saturn -a campus -p --wat'
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
-alias campus_dtp='saturn --production --application campus --deploy'
 
 // platform
 
