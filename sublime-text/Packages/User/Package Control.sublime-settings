@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"SchemeCycler"
 	],
 	"installed_packages":
 	[
@@ -11,7 +10,6 @@
 		"Babel",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"Chopstick Autocompletion",
 		"Color Highlighter",
 		"Git",
 		"Haml",
@@ -19,10 +17,10 @@
 		"jQuery",
 		"Modific",
 		"Package Control",
-		"SchemeCycler",
 		"SideBarEnhancements",
 		"Syntax Highlighting for Sass",
 		"Theme - Flatland",
-		"Theme - Soda"
+		"Theme - Soda",
+		"Theme - Soda SolarizedDark"
 	]
 }
