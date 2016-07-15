@@ -8,7 +8,6 @@
 #   $PATH
 # ----------------------------------------------------
 
-
 PATH_DIRECTORIES=(
   '/Applications/Postgres.app/Contents/Versions/9.4/bin'
   '/usr/local/heroku/bin'
