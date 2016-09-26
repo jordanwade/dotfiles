@@ -46,7 +46,7 @@ alias hb='hub browse'
 alias hc='hub clone'
 alias hpr='hub pull-request'
 
-## ----- Heroku ----- ##
+## ----- Heroku (cs-directory)----- ##
 
 alias hd='git push heroku master'
 alias hrm='heroku run rake db:migrate'
@@ -101,9 +101,12 @@ alias rs='redis-server /usr/local/etc/redis.conf'
 alias fa='alias | grep'
 alias faa='find_alias'
 
+## ----- Sublime ----- ##
+
+alias s='sublime'
+
 ## ----- Unix ----- ##
 
-#Listing
 alias l='ls -1F'
 alias la='ls -A1F'
 
@@ -132,7 +135,10 @@ alias campus_servers='saturn -a campus -p --wat'
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
 
-// platform
+alias cm_check_courses='bundle exec rake campus:courses:cmd cmd="git status"'
+alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" | grep "On branch"'
+
+// .com
 
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'

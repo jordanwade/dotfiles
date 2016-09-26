@@ -40,6 +40,30 @@ function find_alias() {
   alias | grep "alias\s$1"
 }
 
+# ----------------------------------------------------
+#   Find Alias
+#   -> Greps for an alias
+# ----------------------------------------------------
+
+function sublime() {
+  # If arguments exist, use the default behavior
+  if [ $# -gt 0 ]; then
+    subl "$@"
+
+  # If no arguments exist...
+  else
+    ls -1 *.sublime-project &> /dev/null
+
+    # If a .sublime-project file exists, open that
+    if [ "$?" -eq 0 ]; then
+      subl "$(ls -1 *.sublime-project)"
+
+    # Otherwise, open the current directory
+    else
+      subl .
+    fi
+  fi
+}
 
 # ----------------------------------------------------
 #   Dispatch
