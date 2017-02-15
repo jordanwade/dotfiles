@@ -11,6 +11,10 @@ alias be='bundle exec'
 
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 
+## ----- Browser Sync ----- ##
+
+alias bs='browser-sync start --directory --server --files "*.js, *.html, *.css"'
+
 ## ----- Git ----- ##
 
 alias ga='git add'
@@ -81,6 +85,10 @@ alias dmx='dnx web'
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
 
 alias lscleanup="/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user && killall Finder"
+
+## ----- PHP/Laravel ----- ##
+
+alias phps='php artisan serve'
 
 ## ----- Python/Django ----- ##
 
