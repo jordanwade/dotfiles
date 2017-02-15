@@ -2,7 +2,6 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Package Control"
 	],
 	"installed_packages":
 	[
@@ -11,15 +10,20 @@
 		"Babel",
 		"Better CoffeeScript",
 		"BracketHighlighter",
-		"Color Highlighter",
+		"Cobalt2 Flat Theme",
 		"Git",
+		"GitGutter",
 		"Haml",
-		"Jade",
+		"JavaScript Completions",
+		"JavaScript Snippets",
 		"jQuery",
-		"Modific",
+		"Oceanic Next Color Scheme",
 		"Package Control",
 		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-contrib-eslint",
 		"Syntax Highlighting for Sass",
+		"Theme - Cobalt2",
 		"Theme - Flatland",
 		"Theme - Soda",
 		"Theme - Soda SolarizedDark"

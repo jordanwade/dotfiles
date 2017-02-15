@@ -19,12 +19,14 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.yml",
 		"*.zip"
 	],
 	"bold_folder_labels": true,
-	"caret_style": "solid",
-	"color_scheme": "Packages/User/Color Highlighter/themes/Flatland Dark.tmTheme",
+	"caret_extra_bottom": 2,
+	"caret_extra_top": 2,
+	"caret_extra_width": 3,
+	"caret_style": "phase",
+	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
 	"create_window_at_startup": false,
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
@@ -40,7 +42,6 @@
 		".sass-cache",
 		".travis",
 		"jspm_packages",
-		"node_modules",
 		"python3.4",
 		"tmp",
 		"venv"
@@ -51,22 +52,26 @@
 		"no_bold",
 		"subpixel_antialias"
 	],
-	"font_size": 16.0,
+	"font_size": 14.0,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Chopstick Autocompletion",
-		"Package Control",
 		"SchemeCycler",
 		"Vintage"
 	],
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"scroll_past_end": true,
 	"show_minimap": false,
 	"tab_size": 2,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Cobalt2.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"wide_caret": true,
 	"word_wrap": true
