@@ -4,3 +4,6 @@
 [submodule "bin-scripts"]
 	path = bin
 	url = https://github.com/jordanwade/bin-scripts
+[submodule "bin"]
+	path = bin
+	url = https://github.com/jordanwade/bin-scripts
