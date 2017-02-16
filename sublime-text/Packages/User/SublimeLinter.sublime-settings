@@ -18,9 +18,7 @@
         "passive_warnings": false,
         "paths": {
             "linux": [],
-            "osx": [
-                "/Users/jordanwade/.nvm/versions/node/v5.0.0"
-            ],
+            "osx": [],
             "windows": []
         },
         "python_paths": {

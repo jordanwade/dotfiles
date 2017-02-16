@@ -133,7 +133,7 @@ alias kill='killall Finder'
 
 alias rk_tasks="be rake -T | grep 'sample'"
 
-// campus
+## ----- Code School: campus ----- ##
 
 alias campus_bcp='saturn -p -a campus --rake-all "campus:cache:bust course=all"'
 alias campus_bcs='saturn -s -a campus --rake-all "campus:cache:bust course=all"'
@@ -146,7 +146,7 @@ alias cm_update_courses='bundle exec rake campus:courses:update'
 alias cm_check_courses='bundle exec rake campus:courses:cmd cmd="git status"'
 alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" | grep "On branch"'
 
-// .com
+## ----- Code School: com ----- ##
 
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'
