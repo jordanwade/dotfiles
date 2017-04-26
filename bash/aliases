@@ -11,6 +11,12 @@ alias be='bundle exec'
 
 alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 
+# -------------------------------------
+#   Dotfiles
+# -------------------------------------
+
+alias update='update_rbenv && update_ruby_build && git_update_submodules && beerfest'
+
 ## ----- Browser Sync ----- ##
 
 alias bs='browser-sync start --directory --server --files "*.js, *.html, *.css"'
@@ -28,20 +34,21 @@ alias gfb='git checkout -b'
 alias gg='git log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit --date=relative'
 alias ggo='git log --oneline --stat'
 alias ggs='git log'
-alias gw='git show'
+alias git_update_submodules='git submodule foreach git pull'
 alias gl='git pull'
 alias glr='git pull --rebase'
+alias gmm='git merge master'
 alias go='git checkout'
 alias gom='git checkout master'
 alias gp='git push'
 alias gpo='git push origin'
 alias gpom='git push origin master'
 alias gpp='git pull --rebase && git push'
+alias grh='git reset --hard'
 alias gs='git status'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
-alias gmm='git merge master'
-alias grh='git reset --hard'
+alias gw='git show'
 
 ## ----- Hub ----- ##
 
@@ -109,9 +116,10 @@ alias rs='redis-server /usr/local/etc/redis.conf'
 alias fa='alias | grep'
 alias faa='find_alias'
 
-## ----- Sublime ----- ##
+## ----- Code Editors ----- ##
 
 alias s='sublime'
+alias vs='code .'
 
 ## ----- Unix ----- ##
 
@@ -142,6 +150,7 @@ alias campus_dts='saturn --staging --application campus --deploy'
 alias campus_servers='saturn -a campus -p --wat'
 alias cm_latest_courses='bundle exec rake campus:courses:install'
 alias cm_update_courses='bundle exec rake campus:courses:update'
+alias campus_update='cd $HOME/code/cs/campus && git pull && cm_latest_courses && cm_update_courses && cd -'
 
 alias cm_check_courses='bundle exec rake campus:courses:cmd cmd="git status"'
 alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" | grep "On branch"'
@@ -150,9 +159,14 @@ alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" |
 
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'
+alias cs_update='cd $HOME/code/cs/codeschool && git pull && cd -'
 
 alias rkap='RAILS_ENV=development bundle exec rake assets:precompile'
 alias rmpa='rm -rf public/assets'
+
+## ----- Code School & Campus ----- ##
+
+alias update_cs='cs_update && campus_update'
 
 ## ----- JavaScript ----- ##
 

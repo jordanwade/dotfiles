@@ -19,7 +19,8 @@
 		"*.swf",
 		"*.tga",
 		"*.ttf",
-		"*.zip"
+		"*.zip",
+		"node_modules/"
 	],
 	"bold_folder_labels": true,
 	"caret_extra_bottom": 2,
@@ -28,6 +29,10 @@
 	"caret_style": "phase",
 	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
 	"create_window_at_startup": false,
+	"emmet.syntaxProfiles":
+	{
+		"javascript": "html"
+	},
 	"ensure_newline_at_eof_on_save": true,
 	"file_exclude_patterns":
 	[
@@ -36,6 +41,7 @@
 	],
 	"folder_exclude_patterns":
 	[
+		"bundles",
 		".bundle",
 		".git",
 		".sass-cache",
