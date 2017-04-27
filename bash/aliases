@@ -1,7 +1,7 @@
 ## ----- Files & Jumps ----- ##
 
-alias scratch='subl ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
-alias al='subl ~/.dotfiles/bash/aliases'
+alias scratch='code ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+alias al='code ~/.dotfiles/bash/aliases'
 
 ## ----- Bundle ----- ##
 
