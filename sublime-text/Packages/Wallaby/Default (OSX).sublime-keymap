@@ -1,0 +1,40 @@
+[
+    { "keys": ["super+.", "super+."], "command": "toggle_tests_panel"},
+    { "keys": ["super+.", "super+."], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+            { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["super+.", "super+,"], "command": "toggle_console_panel"},
+    { "keys": ["super+.", "super+,"], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+            { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["super+0"], "command": "focus_tests_panel"},
+    { "keys": ["super+.", "super+r"], "command": "wallaby_start" },
+    { "keys": ["super+.", "super+s"], "command": "wallaby_stop" },
+    { "keys": ["super+.", "super+p"], "command": "run_tests", "args": {"testType":"project"}},
+    { "keys": ["super+.", "super+h"], "command": "show_last_screenshot"},
+
+    { "keys": ["super+.", "super+f"], "command": "run_tests", "args": {"testType":"file"}},
+    { "keys": ["super+.", "super+c"], "command": "run_tests", "args": {"testType":"line"}},
+    { "keys": ["super+.", "super+o"], "command": "jump_to", "args": {"jumpType":"failingTest"}},
+    { "keys": ["super+.", "super+i"], "command": "jump_to", "args": {"jumpType":"errorSource"}},
+    { "keys": ["super+.", "super+;"], "command": "toggle_indicators"},
+    { "keys": ["super+.", "super+u"], "command": "toggle_uncovered_regions"},
+    { "keys": ["escape"], "command": "stop_show_uncovered_regions" , "context":
+            [
+                { "key": "setting.wb_uncovered", "operator": "equal", "operand": true }
+            ]
+    },
+    { "keys": ["super+.", "super+l"], "command": "show_line_tests" },
+    { "keys": ["super+shift+."], "command": "show_overlay", "args": {"overlay": "command_palette", "text":"Wallaby.js"} },
+    { "keys": ["enter"], "command": "click_to_link" , "context":
+            [
+                { "key": "setting.at_wb_tests_view", "operator": "equal", "operand": true }
+            ]
+    }
+]

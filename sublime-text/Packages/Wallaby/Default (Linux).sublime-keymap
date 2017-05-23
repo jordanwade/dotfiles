@@ -1,0 +1,40 @@
+[
+    { "keys": ["ctrl+.", "ctrl+."], "command": "toggle_tests_panel"},
+    { "keys": ["ctrl+.", "ctrl+."], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+            [
+                { "key": "panel_visible", "operator": "equal", "operand": true }
+            ]
+    },
+    { "keys": ["ctrl+.", "ctrl+,"], "command": "toggle_console_panel"},
+    { "keys": ["ctrl+.", "ctrl+,"], "command": "hide_panel", "args": {"cancel": true},
+        "context":
+        [
+            { "key": "panel_visible", "operator": "equal", "operand": true }
+        ]
+    },
+    { "keys": ["ctrl+0"], "command": "focus_tests_panel"},
+    { "keys": ["ctrl+.", "ctrl+r"], "command": "wallaby_start" },
+    { "keys": ["ctrl+.", "ctrl+s"], "command": "wallaby_stop" },
+    { "keys": ["ctrl+.", "ctrl+p"], "command": "run_tests", "args": {"testType":"project"}},
+    { "keys": ["ctrl+.", "ctrl+h"], "command": "show_last_screenshot"},
+
+    { "keys": ["ctrl+.", "ctrl+f"], "command": "run_tests", "args": {"testType":"file"}},
+    { "keys": ["ctrl+.", "ctrl+c"], "command": "run_tests", "args": {"testType":"line"}},
+    { "keys": ["ctrl+.", "ctrl+o"], "command": "jump_to", "args": {"jumpType":"failingTest"}},
+    { "keys": ["ctrl+.", "ctrl+i"], "command": "jump_to", "args": {"jumpType":"errorSource"}},
+    { "keys": ["ctrl+.", "ctrl+;"], "command": "toggle_indicators"},
+    { "keys": ["ctrl+.", "ctrl+u"], "command": "toggle_uncovered_regions"},
+    { "keys": ["escape"], "command": "stop_show_uncovered_regions" , "context":
+            [
+                { "key": "setting.wb_uncovered", "operator": "equal", "operand": true }
+            ]
+    },
+    { "keys": ["ctrl+.", "ctrl+l"], "command": "show_line_tests" },
+    { "keys": ["ctrl+shift+."], "command": "show_overlay", "args": {"overlay": "command_palette", "text":"Wallaby.js"} },
+    { "keys": ["enter"], "command": "click_to_link" , "context":
+            [
+                { "key": "setting.at_wb_tests_view", "operator": "equal", "operand": true }
+            ]
+    }
+]

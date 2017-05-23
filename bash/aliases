@@ -1,7 +1,7 @@
 ## ----- Files & Jumps ----- ##
 
-alias scratch='code ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
-alias al='code ~/.dotfiles/bash/aliases'
+alias scratch='subl ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
+alias al='subl ~/.dotfiles/bash/aliases'
 
 ## ----- Bundle ----- ##
 
@@ -15,7 +15,7 @@ alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
 #   Dotfiles
 # -------------------------------------
 
-alias update='update_rbenv && update_ruby_build && git_update_submodules && beerfest'
+alias update='update_rbenv && update_ruby_build && beerfest'
 
 ## ----- Browser Sync ----- ##
 

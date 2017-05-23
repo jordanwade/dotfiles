@@ -1,0 +1,10 @@
+[
+{
+		"caption": "Select as Wallaby.js Config",
+		"id": "side-bar-wallaby_start_set_config_file",
+		"command": "wallaby_set_config_file",
+		"args": {
+			"paths": []
+		}
+	}
+]

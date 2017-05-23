@@ -14,6 +14,7 @@
 		"Emmet",
 		"Git",
 		"Haml",
+		"Jade",
 		"JavaScript Completions",
 		"jQuery",
 		"Oceanic Next Color Scheme",
@@ -31,6 +32,7 @@
 		"Theme - Flatland",
 		"Theme - Soda",
 		"Theme - Soda SolarizedDark",
-		"TypeScript"
+		"TypeScript",
+		"Wallaby"
 	]
 }

@@ -1,0 +1,16 @@
+[
+{ "caption":"Wallaby.js: Start", "command": "wallaby_start" },
+{ "caption":"Wallaby.js: Stop", "command": "wallaby_stop" },
+{ "caption":"Wallaby.js: Toggle Tests View", "command": "toggle_tests_panel" },
+{ "caption":"Wallaby.js: Focus Tests View", "command": "focus_tests_panel" },
+{ "caption":"Wallaby.js: Show Console", "command": "toggle_console_panel" },
+{ "caption":"Wallaby.js: Run line tests", "command": "run_tests", "args": {"testType":"line"} },
+{ "caption":"Wallaby.js: Run file tests", "command": "run_tests", "args": {"testType":"file"} },
+{ "caption":"Wallaby.js: Run project tests", "command": "run_tests", "args": {"testType":"project"} },
+{ "caption":"Wallaby.js: Show Uncovered Regions", "command": "toggle_uncovered_regions" },
+{ "caption":"Wallaby.js: Show Line Tests", "command": "show_line_tests" },
+{ "caption":"Wallaby.js: Jump to failing test", "command": "jump_to", "args": {"jumpType":"failingTest"} },
+{ "caption":"Wallaby.js: Jump to error source", "command": "jump_to", "args": {"jumpType":"errorSource"} },
+{ "caption":"Wallaby.js: Show Last Screenshot", "command": "show_last_screenshot" },
+{ "caption":"Wallaby.js: Show License", "command": "show_license" }
+]

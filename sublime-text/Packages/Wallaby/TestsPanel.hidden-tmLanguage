@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ssraw</string>
+	</array>
+	<key>name</key>
+	<string>Syntax Name</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>messsage</string>
+			<key>match</key>
+			<string>​{5}[^​]+​{5}</string>
+			<key>name</key>
+			<string>constant.numeric.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>suite</string>
+			<key>match</key>
+			<string>​{4}[^​]+​{4}</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>duration</string>
+			<key>match</key>
+			<string>​{3}[^​]+​{3}</string>
+			<key>name</key>
+			<string>comment.line</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>errors</string>
+			<key>match</key>
+			<string>​{2}[^​]+​{2}</string>
+			<key>name</key>
+			<string>keyword.control.js</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>link</string>
+			<key>match</key>
+			<string>​{1}[^​]+​{1}</string>
+			<key>name</key>
+			<string>storage.type</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.ssraw</string>
+	<key>uuid</key>
+	<string>3e259664-274d-4df6-99e3-d284856b8b68</string>
+</dict>
+</plist>
+

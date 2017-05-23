@@ -1,0 +1,11 @@
+	<dict>
+		<key>name</key>
+		<string>Wallaby.js</string>
+		<key>scope</key>
+		<string>wallaby</string>
+		<key>settings</key>
+		<dict>
+			<key>foreground</key>
+			<string>#ffffff</string>
+		</dict>
+	</dict>

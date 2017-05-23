@@ -27,7 +27,7 @@
 	"caret_extra_top": 2,
 	"caret_extra_width": 3,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Cobalt2/cobalt2.tmTheme",
+	"color_scheme": "Packages/Color Scheme - Wallaby/cobalt2.tmTheme",
 	"create_window_at_startup": false,
 	"emmet.syntaxProfiles":
 	{
