@@ -1,1 +1,1 @@
-{"dependencies": [], "version": "1.0.36", "platforms": ["*"], "url": "http://wallabyjs.com", "sublime_text": ">=3000", "description": "Super fast test runner with realtime time code coverage for JavaScript."}
+{"sublime_text": ">=3000", "description": "Super fast test runner with realtime time code coverage for JavaScript.", "version": "1.0.37", "url": "http://wallabyjs.com", "platforms": ["*"], "dependencies": []}
