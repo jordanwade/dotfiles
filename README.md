@@ -1,5 +1,4 @@
-Jordan Wade's Dotfiles
+Dotfiles
 ======================
 
-My system-wide files!
-# bin-scripts
+Follow the [setup guide](https://github.com/jordanwade/dotfiles/blob/master/setup.md) to install.
