@@ -1,3 +1,30 @@
+# -------------------------------------
+#   Create Symlink
+#   -> Creates a symlink from two files
+# -------------------------------------
+#
+# $1 - The file to create a symlink from
+# $2 - The file the symlink is to
+#
+# Usage: `create_symlink path/to/file path/to/file`
+#
+
+function create_symlink() {
+  # Create the new file
+  touch $2
+
+  # Copy the original file contents into the new file
+  while read line; do
+   echo $line >> $2
+  done < $1
+
+  # Remove the original file
+  rm $1
+
+  # Create the symlink
+  ln -s $2 $1
+}
+
 # ----------------------------------------------------
 #   Remote Tracking Branch
 #   -> Creates a new branch and pushes that branch to remote
@@ -65,33 +92,25 @@ function sublime() {
   fi
 }
 
-# ----------------------------------------------------
+# -------------------------------------
 #   Dispatch
-#   -> Runs scripts for js.com
-# ----------------------------------------------------
+#   -> Check if project has setup function and run it
+# -------------------------------------
+#
+# Usage: `dispatch`
+#
 
 function dispatch() {
+  local path=$(pwd)
+  local project=$(basename $path)
 
-  if [ "$DISPATCHED" != "1" ]; then
-
-    # JavaScript.com
-
-    if [ "$( pwd )" == "$HOME/Projects/cs/JavaScript.com" ]; then
-      . .service-credentials
-      nvm use iojs-v1.2.0 &> /dev/null
-
-      DISPATCHED="1"
+  if [ "$DISPATCHED" == 0 ]; then
+    if type -t "$project"_setup | grep -i function > /dev/null; then
+      "$project"_setup
+      DISPATCHED=1
     fi
-
   fi
-
 }
-
-# ----------------------------------------------------
-#   Prompt Command
-# ----------------------------------------------------
-
-PROMPT_COMMAND+='; dispatch'
 
 
 # ----------------------------------------------------
@@ -118,3 +137,17 @@ nvm_auto_switch() {
 
 alias ll='ls -lah'
 cd() { builtin cd "$@"; nvm_auto_switch; ll; }
+
+# -------------------------------------
+#   Symlinks
+#   -> List symlink files in a specified directory
+# -------------------------------------
+#
+# $1 - the directory
+#
+# Usage: `symlinks ~`
+#
+
+function symlinks() {
+  ls -al "$1" | grep .-\>
+}
