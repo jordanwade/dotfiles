@@ -1,0 +1,18 @@
+# ****************************************************
+#
+#   Bash Profile
+#
+# ****************************************************
+
+# ----------------------------------------------------
+#   Imports
+# ----------------------------------------------------
+
+source ~/.bash/partials/path
+source ~/.bash/partials/aliases
+source ~/.bash/partials/config
+source ~/.bash/completions/git.bash
+source ~/.bash/functions/functions
+source ~/.bash/functions/grunt_gen
+source ~/.bash/partials/prompt
+source ~/.bash/partials/overrides
