@@ -6,13 +6,12 @@ brew tap caskroom/versions
 
 brew cask install adobe-creative-cloud 2> /dev/null
 brew cask install alfred 2> /dev/null
-brew cask install anvil 2> /dev/null
-brew cask install atom 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install evernote 2> /dev/null
 brew cask install firefox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
+brew cask install google-chrome-canary 2> /dev/null
 brew cask install imageoptim 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install keyboard-maestro 2> /dev/null
@@ -20,4 +19,15 @@ brew cask install mamp 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install postgres 2> /dev/null
 brew cask install spotify 2> /dev/null
-brew cask install sublime-text3 2> /dev/null
+brew cask install visual-studio-code> /dev/null
+brew cask install chromium> /dev/null
+brew cask install docker> /dev/null
+brew cask install flux> /dev/null
+brew cask install mongodb-compass-beta> /dev/null
+brew cask install screenhero> /dev/null
+brew cask install sketch> /dev/null
+brew cask install sketchup> /dev/null
+brew cask install slack> /dev/null
+brew cask install spotify> /dev/null
+brew cask install transmit> /dev/null
+brew cask install tunnelblick> /dev/null
