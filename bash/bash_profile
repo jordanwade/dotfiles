@@ -16,3 +16,9 @@ source ~/.bash/functions/functions
 source ~/.bash/functions/grunt_gen
 source ~/.bash/partials/prompt
 source ~/.bash/partials/overrides
+
+# -------------------------------------
+#   Extras
+# -------------------------------------
+
+source ~/.bash/partials/extras
