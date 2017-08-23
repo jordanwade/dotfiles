@@ -31,5 +31,13 @@ install node
 # -> Advanced key-value store
 install redis
 
+# Image Magick
+# -> Automate saving out image files
+install imagemagick
+
+# Mongo DB
+# -> Database
+Install mongodb
+
 # Remove outdated versions from the cellar
 cleanup
