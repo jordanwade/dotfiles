@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Gems
+#
+# ****************************************************
+
+gem install bundler
+gem install desktop
+gem install rails
