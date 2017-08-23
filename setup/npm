@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - NPM
+#
+# ****************************************************
+
+packages=(
+  create-react-app
+  eslint
+  flow-bin
+  prettier
+  prettier-eslint
+  prettier-eslint-cli
+  eslint-config-prettier
+  eslint-plugin-prettier
+  stylefmt
+  stylelint
+  # babel-eslint
+  # stylelint-order
+  # imageoptim-cli
+  # remind-me
+  # remind
+  # speed-test
+  # stylestats
+  # svgo
+  # parker
+  # psi
+  # yo
+)
+
+for package in ${packages[@]}; do
+  npm install -g $package
+done

@@ -1,43 +1,57 @@
-# Install command-line tools using Homebrew
-# Usage: `brew bundle setup/brew`
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Homebrew
+#
+# ****************************************************
 
 # Make sure we’re using the latest Homebrew
-update
+brew update
 
 # Upgrade any already-installed formulae
-upgrade
+brew upgrade
 
 # Autojump
 # -> A cd command that learns
-install autojump
+brew install autojump
 
 # Bash & Bash Completion
-install bash
-install bash-completion
+brew install bash
+brew install bash-completion
 
 # Git
 # -> Version control
-install git
+brew install git
 
 # Hub
 # -> Command-line wrapper for git
-install hub
+brew install hub
 
-# Node
-# -> Platform built on Chrome's JavaScript runtime
-install node
+# NVM
+# -> Node Version Manager
+brew install nvm
+
+# MAS
+# -> Mac App Store command-line interface
+brew install mas
+
+# Postgres
+brew install postgres
+
+# Python
+brew install python
 
 # Redis
 # -> Advanced key-value store
-install redis
+brew install redis
 
 # Image Magick
 # -> Automate saving out image files
-install imagemagick
+brew install imagemagick
 
 # Mongo DB
 # -> Database
-Install mongodb
+brew install mongodb
 
 # Remove outdated versions from the cellar
-cleanup
+brew cleanup
