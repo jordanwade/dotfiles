@@ -1,7 +1,7 @@
 ## ----- Files & Jumps ----- ##
 
 alias scratch='subl ~/Dropbox\ \(Personal\)/Notes/notes-scratch.txt'
-alias al='subl ~/.dotfiles/bash/aliases'
+alias al='code $HOME/.dotfiles/bash/partials/aliases'
 
 ## ----- Bundle ----- ##
 
@@ -20,6 +20,12 @@ alias update='update_rbenv && update_ruby_build && beerfest'
 ## ----- Browser Sync ----- ##
 
 alias bs='browser-sync start --directory --server --files "*.js, *.html, *.css"'
+
+
+## ----- Docker ----- ##
+
+alias dcu='docker-compose up'
+alias dcd='docker-compose down'
 
 ## ----- Git ----- ##
 
