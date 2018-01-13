@@ -165,7 +165,7 @@ alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" |
 
 alias cs_dtp='saturn --production --application codeschool --deploy'
 alias cs_dts='saturn --staging --application codeschool --deploy'
-alias cs_update='cd $HOME/code/cs/codeschool && git pull && cd -'
+alias cs_update='cd $HOME/code/ps/codeschool && git pull && cd -'
 
 alias rkap='RAILS_ENV=development bundle exec rake assets:precompile'
 alias rmpa='rm -rf public/assets'
