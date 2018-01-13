@@ -89,7 +89,7 @@ alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
 
-## ----- Net ----- ##
+## ----- .Net ----- ##
 
 alias dmx='dnx web'
 
@@ -112,6 +112,10 @@ alias pys='python manage.py runserver'
 alias ras='rails s'
 alias rac='rails c'
 alias frp='be rake routes | grep'
+
+alias rkap='RAILS_ENV=development bundle exec rake assets:precompile'
+alias rmpa='rm -rf public/assets'
+
 
 ## ----- Redis ----- ##
 
@@ -142,41 +146,6 @@ alias sshkey='cat $HOME/.ssh/id_rsa.pub | pbcopy'
 alias hideall='defaults write com.apple.finder AppleShowAllFiles NO && killall Finder'
 alias showall='defaults write com.apple.finder AppleShowAllFiles YES && killall Finder'
 alias kill='killall Finder'
-
-## ----- Code School ----- ##
-
-alias rk_tasks="be rake -T | grep 'sample'"
-
-## ----- Code School: campus ----- ##
-
-alias campus_bcp='saturn -p -a campus --rake-all "campus:cache:bust course=all"'
-alias campus_bcs='saturn -s -a campus --rake-all "campus:cache:bust course=all"'
-alias campus_dtp='saturn --production --application campus --deploy'
-alias campus_dts='saturn --staging --application campus --deploy'
-alias campus_servers='saturn -a campus -p --wat'
-alias cm_latest_courses='bundle exec rake campus:courses:install'
-alias cm_update_courses='bundle exec rake campus:courses:update'
-alias campus_update='cd $HOME/code/ps/campus && git pull && cd $HOME/code/ps/interactive-courses && git pull && cm_latest_courses && cm_update_courses && cd -'
-
-alias cm_check_courses='bundle exec rake campus:courses:cmd cmd="git status"'
-alias cm_check_courses_b='bundle exec rake campus:courses:cmd cmd="git status" | grep "On branch"'
-
-## ----- Code School: com ----- ##
-
-alias cs_dtp='saturn --production --application codeschool --deploy'
-alias cs_dts='saturn --staging --application codeschool --deploy'
-alias cs_update='cd $HOME/code/ps/codeschool && git pull && cd -'
-
-alias rkap='RAILS_ENV=development bundle exec rake assets:precompile'
-alias rmpa='rm -rf public/assets'
-
-## ----- Code School & Campus ----- ##
-
-alias update_cs='cs_update && campus_update'
-
-## ----- JavaScript ----- ##
-
-alias dropdb="psql -c 'DROP DATABASE javascriptcom'"
 
 ## ----- Update rbenv and rails ----- ##
 
