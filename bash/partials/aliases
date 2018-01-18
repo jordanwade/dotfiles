@@ -89,10 +89,6 @@ alias mlcf='mvcss-library copy foundation'
 alias mlco='mvcss-library components'
 alias mlcco='mvcss-library copy components'
 
-## ----- .Net ----- ##
-
-alias dmx='dnx web'
-
 ## ----- OS X ----- ##
 
 # Clean up LaunchServices to remove duplicates in the "Open With" menu
