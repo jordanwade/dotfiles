@@ -29,7 +29,6 @@ brew cask install chromium> /dev/null
 brew cask install docker> /dev/null
 brew cask install flux> /dev/null
 brew cask install mongodb-compass-beta> /dev/null
-brew cask install screenhero> /dev/null
 brew cask install sketch> /dev/null
 brew cask install sketchup> /dev/null
 brew cask install slack> /dev/null
