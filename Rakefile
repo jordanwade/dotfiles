@@ -55,7 +55,7 @@ installation_order = [
   'install_gems',
   'install_osx_settings',
   'install_cask',
-  'install_mas_apps',
+  'install_mac_apps',
   'install_visual_studio_code_settings',
   'install_pow',
   'install_cleanup'
@@ -295,13 +295,13 @@ task :install_cask, :run do |task, args|
 end
 
 # ====================================
-#   Install MAS Apps
+#   Install MAC Apps
 # ====================================
 
-task :install_mas_apps, :run do |task, args|
+task :install_mac_apps, :run do |task, args|
   current_step = current_step + 1
 
-  prompt 'Mac App Store Apps'
+  prompt 'Mac App Store Apps (Sign In First)'
 
   if response?('y')
     message 'Installing Mac App Store apps...'
