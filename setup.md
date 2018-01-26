@@ -22,3 +22,5 @@ rake install_COMMAND_NAME_GOES_HERE[single]
 **Note**: If installing on El Capitan, [read
 this](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/El_Capitan_and_Homebrew.md) _before_ running.
 
+_When finished install your local dotfiles._
+
