@@ -5,7 +5,7 @@
 # ----- Versions ----- #
 
 global_ruby_version = '2.4.1'
-global_node_version = '7.10.0'
+global_node_version = '8.6.0'
 
 # ----- Original Locations ----- #
 
@@ -13,6 +13,7 @@ original_locations                   = {}
 original_locations[:bash_directory]  = "#{ ENV['HOME'] }/.dotfiles/bash"
 original_locations[:bash_powerline]  = "#{ ENV['HOME'] }/.dotfiles/bash/partials/prompt-powerline"
 original_locations[:bash_profile]    = "#{ ENV['HOME'] }/.dotfiles/bash/bash_profile"
+original_locations[:bundle]          = "#{ ENV['HOME'] }/.dotfiles/bundle/config"         
 original_locations[:editorconfig]    = "#{ ENV['HOME'] }/.dotfiles/editorconfig/editorconfig"
 original_locations[:eslintrc]        = "#{ ENV['HOME'] }/.dotfiles/eslint/eslintrc"
 original_locations[:gemrc]           = "#{ ENV['HOME'] }/.dotfiles/gem/gemrc"
@@ -28,6 +29,7 @@ new_locations                   = {}
 new_locations[:bash_directory]  = "#{ ENV['HOME'] }/.bash"
 new_locations[:bash_powerline]  = "#{ ENV['HOME'] }/.bash-powerline.sh"
 new_locations[:bash_profile]    = "#{ ENV['HOME'] }/.bash_profile"
+new_locations[:bundle]          = "#{ ENV['HOME'] }/.bundle/config"
 new_locations[:editorconfig]    = "#{ ENV['HOME'] }/.editorconfig"
 new_locations[:eslintrc]        = "#{ ENV['HOME'] }/.eslintrc"
 new_locations[:gemrc]           = "#{ ENV['HOME'] }/.gemrc"
