@@ -44,8 +44,10 @@ alias git_update_submodules='git submodule foreach git pull'
 alias gl='git pull'
 alias glr='git pull --rebase'
 alias gmm='git merge master'
+alias gmd='git merge development'
 alias go='git checkout'
 alias gom='git checkout master'
+alias god='git checkout development'
 alias gp='git push'
 alias gpo='git push origin'
 alias gpom='git push origin master'
@@ -147,3 +149,11 @@ alias kill='killall Finder'
 
 alias update_rbenv='cd $HOME/.rbenv && git pull && cd -'
 alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
+
+## ----- DataCamp ----- ##
+
+alias campus='npm run watch'
+alias ee='foreman start'
+alias main='WEB_CONCURRENCY=10 bundle exec unicorn -p 3000 -c config/unicorn.rb'
+alias style='npm start'
+alias teach='rails s -p 3001'

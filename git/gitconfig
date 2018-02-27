@@ -17,3 +17,8 @@
 [commit]
 
   template = ~/.dotfiles/git/template
+  
+[hub]
+	protocol = https
+[credential]
+	helper = osxkeychain
