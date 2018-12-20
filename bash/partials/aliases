@@ -152,10 +152,15 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 
 ## ----- DataCamp ----- ##
 
-alias campus='npm run watch'
+alias campus='npm run watch-client'
+alias campus2='npm run watch-server'
 alias ee='foreman start'
 alias main='rails s'
 alias style='npm start'
 alias teach='rails s -p 3001'
 alias teach2='npm install && npm start'
 alias teach-edit='npm start'
+
+## ----- npm scripts ----- ##
+
+alias sb='npm run storybook'
