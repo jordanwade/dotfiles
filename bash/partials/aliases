@@ -9,7 +9,7 @@ alias be='bundle exec'
 
 ## ----- Brew ----- ##
 
-alias beerfest='brew update && brew cleanup && brew prune && brew doctor'
+alias beerfest='brew update && brew cleanup && brew cleanup --prune-prefix && brew doctor'
 
 # -------------------------------------
 #   Dotfiles
@@ -45,6 +45,7 @@ alias gl='git pull'
 alias glr='git pull --rebase'
 alias gmm='git merge master'
 alias gmd='git merge development'
+alias gno='git commit --amend --no-edit && git push -f'
 alias go='git checkout'
 alias gom='git checkout master'
 alias god='git checkout development'
@@ -155,7 +156,7 @@ alias update_ruby_build='cd $HOME/.rbenv/plugins/ruby-build && git pull && cd -'
 alias campus='npm run watch-client'
 alias campus2='npm run watch-server'
 alias ee='foreman start'
-alias main='rails s'
+alias main='bundle exec rails s'
 alias style='npm start'
 alias teach='rails s -p 3001'
 alias teach2='npm install && npm start'
@@ -164,3 +165,7 @@ alias teach-edit='npm start'
 ## ----- npm scripts ----- ##
 
 alias sb='npm run storybook'
+
+## ----- CORS Chrome ----- ##
+
+alias cors-chrome="open -a Google\ Chrome\ Canary --args --disable-web-security --user-data-dir=$HOME/profile-folder-name"
