@@ -58,6 +58,7 @@ alias gs='git status'
 alias gt='git tag'
 alias gui='git update-index --assume-unchanged'
 alias gw='git show'
+alias gprune='git fetch --prune'
 
 ## ----- Hub ----- ##
 

@@ -27,3 +27,8 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[init]
+	defaultBranch = main
+[user]
+	name = Jordan Wade
+	email = jjwade31@gmail.com
