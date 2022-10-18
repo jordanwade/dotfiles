@@ -23,7 +23,7 @@ original_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.dotfiles-local/gitconf
 original_locations[:gitignore]       = "#{ ENV['HOME'] }/.dotfiles/git/gitignore"
 original_locations[:inputrc]         = "#{ ENV['HOME'] }/.dotfiles/bash/inputrc"
 original_locations[:stylelint]       = "#{ ENV['HOME'] }/.dotfiles/stylelint/stylelintrc"
-
+original_locations[:starship]        = "#{ ENV['HOME'] }/.dotfiles/starship/starship.toml"
 # ----- New Locations ----- #
 
 new_locations                   = {}
@@ -40,6 +40,7 @@ new_locations[:gitconfig_local] = "#{ ENV['HOME'] }/.gitconfig.local"
 new_locations[:gitignore]       = "#{ ENV['HOME'] }/.gitignore"
 new_locations[:inputrc]         = "#{ ENV['HOME'] }/.inputrc"
 new_locations[:stylelint]       = "#{ ENV['HOME'] }/.stylelintrc"
+new_locations[:starship]        = "#{ ENV['HOME'] }/.config/starship.toml"
 
 # ----- Installation Order ----- #
 
